@@ -237,7 +237,7 @@ section {
 .navbar .dropdown:hover>ul {
     opacity: 1;
     top: 100;
-    visibility: hidden;
+    visibility: visible;
 }
 
 .navbar .dropdown .dropdown ul {
