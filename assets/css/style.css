@@ -1,13 +1,13 @@
-/*
+/*-------------------------------------------------------------------------------------------------------
 # General
-*/
+-------------------------------------------------------------------------------------------------------*/
 :root {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
-    color:#444444;
+    color: #444444;
 }
 
 a {
@@ -20,20 +20,20 @@ a:hover {
     text-decoration: none;
 }
 
-h1,h2,h3.h4,h5,h6 {
-    font-family: "Nunito", sans-serif;
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Nunito",sans-serif;
 }
-/*
-# sections
-*/
-section {
+/*-------------------------------------------------------------------------------------------------------
+# Sections
+-------------------------------------------------------------------------------------------------------*/
+section{
     padding: 60px 0;
     overflow: hidden;
 }
 
 .section-header {
     text-align: center;
-    padding-bottom: 40px ;
+    padding-bottom: 40px;
 }
 
 .section-header h2 {
@@ -54,15 +54,15 @@ section {
     color: #012970;
 }
 
-@media (max-width: 768px) {
-    .section-header p {
+@media (max-widht: 768px) {
+    .section-headerp {
         font-size: 28px;
         line-height: 32px;
     }
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # Back to top button
-*/
+-------------------------------------------------------------------------------------------------------*/
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -88,21 +88,21 @@ section {
     color: #fff;
 }
 
-.back-to-top.active{
+.back-to-top.active {
     visibility: visible;
     opacity: 1;
 }
-/*
-#Disable aos animation delay on mobile devices
-*/
-@media screen and (max-width: 768px) {
+/*-------------------------------------------------------------------------------------------------------
+# Back to top button
+-------------------------------------------------------------------------------------------------------*/
+@media screen and (max-widht: 768px) {
     [data-aos-delay] {
         transition-delay: 0 !important;
     }
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # Header
-*/
+-------------------------------------------------------------------------------------------------------*/
 .header {
     transition: all 0.5s;
     z-index: 997;
@@ -129,12 +129,12 @@ section {
     font-weight: 700;
     letter-spacing: 1px;
     color: #012970;
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito",sans-serif;
     margin-top: 3px;
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # Navigation Menu
-*/
+-------------------------------------------------------------------------------------------------------*/
 /**
 * Desktop Navigation
 */
@@ -145,7 +145,7 @@ section {
 .navbar ul {
     margin: 0;
     padding: 0;
-    display: 0;
+    display: flex;
     list-style: none;
     align-items: center;
 }
@@ -168,10 +168,10 @@ section {
     transition: 0.3s;
 }
 
-.navbar a i,
+.navbar a,
 .navbar a:focus i {
     font-size: 12px;
-    line-height: o;
+    line-height: 0;
     margin-left: 5px;
 }
 
@@ -201,7 +201,7 @@ section {
     display: block;
     position: absolute;
     left: 14px;
-    top: calc(100% + 30px);
+    top:calc(100% + 30px);
     margin: 0;
     padding: 10px 0;
     z-index: 99;
@@ -228,7 +228,7 @@ section {
     font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover,
+.navbar .dropdown ul 
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
     color: #4154f1;
@@ -236,7 +236,7 @@ section {
 
 .navbar .dropdown:hover>ul {
     opacity: 1;
-    top: 100;
+    top: 0;
     visibility: visible;
 }
 
@@ -255,18 +255,18 @@ section {
 
 @media (max-width: 1366px) {
     .navbar .dropdown .dropdown ul {
-        left: -90%;
+        left: -90;
     }
 
     .navbar .dropdown .dropdown:hover>ul {
-        left: -100%;
+        left: -100;
     }
 }
 
 /**
 * Mobile Navigation
 */
-.mobile-nav-toggel {
+.mobile-nav-toggle {
     color: #012970;
     font-size: 28px;
     cursor: pointer;
@@ -275,12 +275,12 @@ section {
     transition: 0.5s;
 }
 
-.mobile-nav-toggel.bi-x {
+.mobile-nav-toggle.bi-x {
     color: #fff;
 }
 
-@media (max-width: 991px) {
-    .mobile-nav-toggel {
+@media (max-widht: 991px) {
+    .mobile-nav-toggle {
         display: block;
     }
 
@@ -300,7 +300,7 @@ section {
     transition: 0.3s;
 }
 
-.navbar-mobile .mobile-nav-toggel {
+.navbar-mobile .mobile-nav-toggle {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -371,9 +371,9 @@ section {
 .navbar-mobile .dropdown>.dropdown-active {
     display: block;
 }
-/*
-# Hero section
-*/
+/*-------------------------------------------------------------------------------------------------------
+# Hero Section
+-------------------------------------------------------------------------------------------------------*/
 .hero {
     width: 100%;
     height: 100vh;
@@ -389,7 +389,7 @@ section {
 }
 
 .hero h2 {
-    color: #444444;
+    color:#444444 ;
     margin: 15px 0 0 0;
     font-size: 26px;
 }
@@ -406,68 +406,68 @@ section {
 }
 
 .hero .btn-get-started span {
-    font-family: "Nunito", sans-serif;
+    font-family:"Nunito",sans-serif ;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
 }
 
 .hero .btn-get-started i {
-    margin-left: 5px;
-    font-size: 18px;
+    margin-left: 5px; 
+    font-size: 18px; 
     transition: 0.3s;
 }
 
-.hero .btn-get-started:hover i {
+.hero .btn-get-started:hover i { 
     transform: translateX(5px);
 }
 
-.hero .hero-img {
+.hero .hero-img { 
     text-align: right;
 }
 
 @media (min-width: 1024px) {
     .hero {
-        background-attachment: fixed;
+        background-attachment: fixed; 
     }
 }
-
-@media (max-width: 991px) {
-    .hero {
-        height: auto;
+    
+@media (max-width: 991px) { 
+    .hero { 
+        height: auto; 
         padding: 120px 0 60px 0;
-    }
+}
 
-    .hero .hero-img {
-        text-align: center;
+    .hero .hero-img { 
+        text-align: center; 
         margin-top: 80px;
-    }
+}
 
     .hero .hero-img img {
         width: 80%;
     }
 }
 
-@media (max-width: 768px) {
-    .hero {
-        text-align: center;
-    }
+@media (max-width: 991px) { 
+    .hero { 
+        height: center; 
+}
 
-    .hero h1 {
+    .hero h1{ 
         font-size: 32px;
-    }
+}
 
-    .hero h2 {
+    .hero h1{ 
         font-size: 24px;
-    }
+}
 
     .hero .hero-img img {
         width: 100%;
     }
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # About
-*/
+-------------------------------------------------------------------------------------------------------*/
 .about .content {
     background-color: #f6f9ff;
     padding: 40px;
@@ -491,8 +491,8 @@ section {
     line-height: 24px;
 }
 
-.about .bnt-read-more {
-    line-height: 0;
+.about .btn-read-more {
+    line-height: 0; 
     padding: 15px 40px;
     border-radius: 4px;
     transition: 0.5s;
@@ -501,27 +501,27 @@ section {
     box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
-.about .bnt-read-more span {
+.about .btn-read-more span {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
 }
 
-.about .bnt-read-more i {
-    margin-left: 5px;
+.about .btn-read-more i{
+    margin-left: 5px; 
     font-size: 18px;
     transition: 0.3s;
 }
 
-.about .bnt-read-more:hover i {
-    transform: translateX(5px);
+    .about .btn-read-more:hover { 
+        transform: translateX(5px);
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # Counts
-*/
+-------------------------------------------------------------------------------------------------------*/
 .counts {
-    padding: 70px 0 60px;
+    padding: 70px 0 60px; 
 }
 
 .counts .count-box {
@@ -536,28 +536,28 @@ section {
 .counts .count-box i {
     font-size: 42px;
     line-height: 0;
-    margin-right: 20px;
+    margin-right: 20px; 
     color: #4154f1;
 }
 
-.counts .count-box span {
+.counts .count-box span { 
     font-size: 36px;
     display: block;
     font-weight: 600;
-    color: #0b198f;
+    color: #0b1981;
 }
 
-.counts .count-box p {
+    .counts .count-box p {
     padding: 0;
     margin: 0;
     font-family: "Nunito", sans-serif;
     font-size: 14px;
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # Features
-*/
+-------------------------------------------------------------------------------------------------------*/
 .features .feature-box {
-    padding: 24px 20px;
+    padding: 24px 20px; 
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
     transition: 0.3s;
     height: 100%;
@@ -565,109 +565,109 @@ section {
 
 .features .feature-box h3 {
     font-size: 18px;
-    color: #012970;
+    color: #012970; 
     font-weight: 700;
-    margin: 0;
+    margin: 0; 
 }
 
-.features .feature-box i {
+.features .feature-box {
     line-height: 0;
     background: #ecf3ff;
-    padding: 4px;
-    margin-right: 10px;
-    font-size: 24px;
+    margin-right: 10px; 
     border-radius: 3px;
-    transition: o.3s;
+    padding: 4px;
+    font-size: 24px;
+    transition: 0.3s;
 }
 
-.features .feature-box:hover i {
+.features .feature-box:hover i { 
     background: #4154f1;
     color: #fff;
 }
 
-.features .feature-tabs {
+.features .feture-tabs { 
     margin-top: 120px;
 }
-
-.features .feature-tabs h3 {
+    
+.features .feture-tabs h3 {
     color: #012970;
-    font-weight: 700;
     font-size: 32px;
-    margin-bottom: 10px;
+    font-weight: 700; 
+    margin-bottom: 10px; 
 }
 
-@media (max-width: 768px) {
-    .features .feature-tabs h3 {
-        font-size: 28px;
+@media (max-width: 768px) { 
+    .features .feture-tabs h3 { 
+        font-size: 28px; 
     }
 }
 
-.features .feature-tabs .nav-pills {
+.features .feture-tabs .nav-pills {
     border-bottom: 1px solid #eee;
 }
 
-.features .feature-tabs .nav-link {
+.features .feture-tabs .nav-link { 
     background: none;
-    text-transform: uppercase;
-    font-size: 15px;
+    text-transform: uppercase; 
+    font-size: 15px; 
     font-weight: 600;
     color: #012970;
     padding: 12px 0;
-    margin-right: 25px;
+    margin-right: 25px ;
     margin-bottom: -2px;
     border-radius: 0;
 }
 
-.features .feature-tabs .nav-link.active {
-    color: #4154f1;
+.features .feture-tabs .nav-link.active { 
+    color: #4154f1; 
     border-bottom: 3px solid #4154f1;
 }
 
-.features .feature-tabs .tab-content h4 {
+.features .feture-tabs .tab-content h4 { 
     font-size: 18px;
     margin: 0;
     font-weight: 700;
     color: #012970;
 }
-
-.features .feature-tabs .tab-content i {
-    font-size: 24px;
+    
+.features .feture-tabs .tab-content i { 
     line-height: 0;
+    font-size: 24px;
     margin-right: 8px;
     color: #4154f1;
 }
-
-.features .feature-icons {
-    margin-top: 120px;
+    
+.features .feature-icons { 
+    margin-top: 120px; 
 }
-
+    
 .features .feature-icons h3 {
     color: #012970;
-    font-weight: 700;
+    font-weight: 700; 
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .features .feature-icons h3 {
+@media (max-width: 768px) { 
+    .features .feature-icons h3 { 
         font-size: 28px;
     }
 }
 
-.features .feature-icons .content .icon-box {
+.features .feature-icons .content .icon-box { 
     display: flex;
 }
 
-.features .feature-icons .content .icon-box h4 {
-    font-size: 20px;
-    font-weight: 700;
+.features .feature-icons .content .icon-box h4 { 
+    font-size: 20px; 
+    font-weight: 700; 
     margin: 0 0 10px 0;
     color: #012970;
 }
 
-.features .feature-icons .content .icon-box i {
-    font-size: 44px;
+.features .feature-icons .content .icon-box {
+    font-size: 44px; 
     line-height: 44px;
     color: #0245bc;
     margin-right: 15px;
@@ -677,9 +677,9 @@ section {
     font-size: 15px;
     color: #848484;
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # F.A.Q
-*/
+-------------------------------------------------------------------------------------------------------*/
 .faq .accordion-collapse {
     border: 0;
 }
@@ -703,13 +703,13 @@ section {
     border-bottom: 0;
 }
 
-.faq .accordion-body {
+.faq .accoordion-body {
     padding: 0 0 25px 0;
     border: 0;
 }
-/*
-#  Portfolio
-*/
+/*-------------------------------------------------------------------------------------------------------
+# Portofolio
+-------------------------------------------------------------------------------------------------------*/
 .portfolio #portfolio-flters {
     padding: 0;
     margin: 0 auto 25px auto;
@@ -749,12 +749,12 @@ section {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background: rgba(225, 225, 225, 0.75);
+    background: rgba(255, 266,255, 0.75);
 }
 
 .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(225, 225, 225, 0.75);
+    background: rgba(255, 266,255, 0.75);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -796,7 +796,7 @@ section {
     border-top: 3px solid rgba(1, 41, 112, 0.2);
     border-left: 3px solid rgba(1, 41, 112, 0.2);
     transition: all 0.5s ease 0s;
-    z-index: 9994; 
+    z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::after {
@@ -807,7 +807,7 @@ section {
     position: absolute;
     bottom: 35px;
     right: 35px;
-    border-bottom: 3px solid rgba(1, 41, 112, 0.2);
+    border-bottom:3px solid rgba(1, 41, 112, 0.2) ;
     border-right: 3px solid rgba(1, 41, 112, 0.2);
     transition: all 0.5s ease 0s;
     z-index: 9994;
@@ -828,7 +828,7 @@ section {
     margin: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.portfolio .portfolio-wrap .portfolio-links  {
     text-align: center;
     z-index: 4;
 }
@@ -880,9 +880,9 @@ section {
     bottom: 15px;
     right: 15px;
 }
-/*
-# Portfolio Details
-*/
+/*-------------------------------------------------------------------------------------------------------
+# Portofolio Details
+-------------------------------------------------------------------------------------------------------*/
 .portfolio-details {
     padding-top: 40px;
 }
@@ -944,15 +944,15 @@ section {
 .portfolio-details .portfolio-description p {
     padding: 0;
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # Team
-*/
+-------------------------------------------------------------------------------------------------------*/
 .team {
     background: #fff;
     padding: 60px 0;
 }
 
-.team .member {
+.team .member .member-img {
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
@@ -965,60 +965,60 @@ section {
     position: relative;
     overflow: hidden;
 }
-
-.team .member .member-img::after {
+    
+.team .member member-img:after {
     position: absolute;
-    content: "";
+    content:"";
     left: 0;
-    bottom: 0;
+    bottom: 0; 
     height: 100%;
     width: 100%;
-    background: url(../img/team-shape.svg) no-repeat center bottom;
+    background: url(../img/team-shape.svg) no-repeat center bottom; 
     background-size: contain;
     z-index: 1;
 }
-
+    
 .team .member .social {
     position: absolute;
     right: -100%;
     top: 30px;
     opacity: 0;
-    border-radius: 4px;
+    border-radius: 4px; 
     transition: 0.5s;
-    background: rgba(225, 225, 225, 0.0.3);
+    background: rgba(255, 255, 255, 0.3);
     z-index: 2;
 }
 
 .team .member .social a {
     transition: color 0.3s;
     color: rgba(1, 41, 112, 0.5);
-    margin: 15px 12px;
+    margin: 15px 12px; 
     display: block;
-    line-height: 0;
+    line-height: 0; 
     text-align: center;
 }
 
-.team .member .social a:hover {
+.team .member .social a:hover { 
     color: rgba(1, 41, 112, 0.8);
 }
 
-.team .member .social i {
-    font-size: 18px;
+    .team .member .social i { 
+        font-size: 18px;
 }
 
-.team .member .member-info {
+.team .member .member-info { 
     padding: 10px 15px 20px 15px;
 }
 
 .team .member .member-info h4 {
     font-weight: 700;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 20px; 
     color: #012970;
 }
 
 .team .member .member-info span {
-    display: block;
+    display: block; 
     font-size: 14px;
     font-weight: 400;
     color: #aaaaaa;
@@ -1028,7 +1028,7 @@ section {
     font-style: italic;
     font-size: 14px;
     padding-top: 15px;
-    line-height: 26px;
+    line-height: 26px; 
     color: #5e5e5e;
 }
 
@@ -1041,20 +1041,20 @@ section {
     right: 8px;
     opacity: 1;
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # Clients
-*/
+-------------------------------------------------------------------------------------------------------*/
 .clients .clients-slider .swiper-slide img {
     opacity: 0.5;
     transition: 0.3s;
 }
 
-.clients .clients-slider .swiper-slide img:hover {
+.clients .clients-slider .swiper-slide img:hover { 
     opacity: 1;
 }
 
 .clients .clients-slider .swiper-pagination {
-    margin-top: 20px;
+    margin-top: 20px; 
     position: relative;
 }
 
@@ -1069,52 +1069,57 @@ section {
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #4154f1;
 }
-/*
+/*-------------------------------------------------------------------------------------------------------
 # Contact
-*/
-.contant .info-box{
-    color: #444444;
+-------------------------------------------------------------------------------------------------------*/
+.contact.info-box {
+    color: #444444; 
     background: #fafbff;
-    padding: 30px;
+    padding: 30px; 
 }
 
-.contact .info-box i {
-    font-size: 38px;
+.contact.info-box i {
+    font-size: 38px; 
     line-height: 0;
     color: #4154f1;
 }
 
-.contact .info-box h3 {
+.contact.info-box h3 {
     font-size: 20px;
     color: #012970;
     font-weight: 700;
     margin: 20px 0 10px 0;
 }
 
-.contact .icon-box p {
+.contact .info-box p {
     padding: 0;
     line-height: 24px;
     font-size: 14px;
     margin-bottom: 0;
 }
-
-/*
-# Foother
-*/
+/*-------------------------------------------------------------------------------------------------------
+# Footer
+-------------------------------------------------------------------------------------------------------*/
 .footer {
-    background: #f6f9ff;
+    background: #f6f9ff; 
     padding: 0 0 30px 0;
     font-size: 14px;
 }
-.footer .copyright {
-    text-align: center;
-    padding: 0 0 30px 0;
-    color: #012970;   
+
+.footer .copyright { 
+    text-align: center; 
+    padding-top: 30px; 
+    color: #012970; 
 }
 
-.footer .credits {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 13px;
+.footer .credits { 
+    padding-top: 10px; 
+    text-align: center; 
+    font-size: 13px; 
     color: #012970;
 }
+
+
+
+
+
