@@ -168,7 +168,7 @@ section{
     transition: 0.3s;
 }
 
-.navbar a,
+.navbar a i,
 .navbar a:focus i {
     font-size: 12px;
     line-height: 0;
@@ -236,7 +236,7 @@ section{
 
 .navbar .dropdown:hover>ul {
     opacity: 1;
-    top: 0;
+    top: 100%;
     visibility: visible;
 }
 
